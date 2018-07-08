@@ -1,0 +1,1131 @@
+@font-face {
+    font-family: 'GothamBold';
+    src: url(../fonts/gothambold.ttf); 
+}
+@font-face {
+    font-family: 'GothamBook';
+    src: url(../fonts/Gotham-Book.ttf); 
+}
+@font-face {
+    font-family: 'GothamMed';
+    src: url(../fonts/gothammedium.ttf); 
+}
+body {
+    min-width: 300px;
+}
+.header {
+    display: flex;
+    align-items: stretch;
+}
+.logo {
+    background-image: url(../images/icon/logo_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 154px;
+    height: 45px;
+    margin-right: auto;
+}
+.logolink {
+    margin-right: auto;
+    margin-top: 10px;
+}
+.left-div {
+    flex-grow: 1;
+}
+.right-div{
+    flex-grow: 1;
+    background-color: #e94e38;
+}
+.header_nav {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    color: #96a6a7;
+    font-family: 'GothamMed';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header_nav-li {
+    margin-right: 20px;
+
+}
+.nav-link {
+    color: #96a6a7;
+    padding: 0;
+}
+.search {
+    width: 74px;
+    background-color: #e2dee0;
+    background-image: url(../images/icon/search.svg);
+    background-size: 23px 23px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.search-text {
+    display: none;
+    margin-left: 50px;
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+.login {
+    background-color: #e94e38;
+    background-image: url(../images/icon/human_icon.svg);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.login-text {
+    margin-left: 50px;
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.second-block{
+    background-image: url(../images/city.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    
+}
+.second-block::before {
+    content: "";
+    display: block;
+    background-image: url(../images/city-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    
+}
+.search_form {
+    padding-top: 58px;
+    padding-bottom: 40px;
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.search-select {
+    display: flex;
+    width: 100%;
+}
+.country_search,.typerest_search {
+    flex-grow: 1;
+    
+}
+.country_search {
+    margin-right: 30px;
+}
+.search_form-title {
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 30px;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.search-select .select2-container {
+    width: 220px !important;
+}
+.search-select .select2-container .select2-selection--single {
+    height: 50px ;
+}
+.search-select .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px ;
+    color: #ffffff ;
+    font-family: 'GothamBook' ;
+    font-size: 18px ;
+}
+.search-select .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 30px ;
+}
+.search-select .select2-container--default .select2-selection--single {
+    background-color: rgba(255, 255, 255, 0.2) ;
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    border-radius: 20px ;
+}
+
+.search_area {
+    margin-top: 23px;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    color: #ffffff;
+}
+.search_area[type="text"]::placeholder {
+    color: #ffffff;
+}
+.search-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none ;
+    height: 100% ;
+    left: 0;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    background-image: url(../images/icon/arrow-down.svg);
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
+}
+.search-select .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    width: 26px;
+}
+.search-select .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-radius: 20px;
+}
+.search-select .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    transform: rotate(180deg);
+}
+.search_button {
+    margin-top: 29px;
+    width: 140px;
+    height: 60px;
+    box-shadow: 0 2px 0 #c1412e;
+    background-color: #e94e38;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 48px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 1px;
+}
+.search_button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.third_block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #96a6a7;
+    font-family: 'GothamMed';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.third-block-div {
+    display: flex;
+    align-items: center;
+}
+.nav-li {
+    margin-right: 15px;
+}
+.nav-li:hover {
+    color:  #e94e38;
+}
+.select-div .select2-container {
+    width: 100%!important;
+    height: 35px;
+}
+.select-div {
+    width: 115px;
+    height: 35px;
+    box-sizing: border-box;
+    color: #e94e38;
+    font-family: 'GothamMed';
+    font-size: 12px; 
+    text-transform: uppercase;
+}
+.select-div .select2-container .select2-selection--single {
+    height: 35px;
+}
+.select-div .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    transform: rotate(180deg);
+}
+
+.select-div .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #e94e38;
+    line-height: 33px;
+}
+.select-div .select2-container--default .select2-selection--single {
+    border: 1px solid #96a6a7;
+    border-radius: 50px ;
+}
+.select-div .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-radius: 20px;
+}
+.select-div .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+    background-image: url(../images/icon/arrow-down1.svg);
+    background-position: center center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+.select-div .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 13px;
+}
+.select-div .select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-radius: 20px;
+}
+
+.map-block {
+    width: 125px;
+    border: 1px solid #1baf5d;
+    background-color: #1baf5d;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-left: 19px;
+    margin-left: 10px;
+    color: #fff;
+    background-image: url(../images/icon/geo_icon.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 90px 6px;
+    box-sizing: border-box;
+}
+.filter-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.filter-div {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.house {
+    background-image: url(../images/icon/hause_icon1.svg);
+    background-size: 24px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #1baf5d;
+    color: #fff;
+}
+
+.girl {
+    background-image: url(../images/icon/girl_icon1.svg);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-color: #b6c0c1; 
+}
+.hat {
+    background-image: url(../images/icon/hat_icon.svg);
+    background-size: 25px 17px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #b6c0c1;
+    border-color: #fff;
+}
+.music {
+    background-image: url(../images/icon/music_icon1.svg);
+    background-size: 22px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f19e1f;
+    color: #fff;
+}
+
+.bus {
+    background-image: url(../images/icon/bus_icon1.svg);
+    background-size: 18px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #88499c;
+    color: #fff;
+}
+.fourth-block {
+    background-color: #f3f1f2;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e2dee0;
+}
+.my-card-body {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.card-price {
+    position: absolute;
+    width: 65px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #1baf5d;
+    text-align: center;
+    line-height: 23px;
+    top: 8px;
+    right: 8px;
+    color: #fff;
+    font-size: 12px;
+}
+.my-card {
+    width: 100%;
+    height: 100%;
+    font-family: 'GothamMed';
+}
+.my-card-title {
+    margin-top: 10px;
+    color: #566375;
+    font-family: 'GothamBold';
+    font-size: 14px;
+    line-height: 18px;
+}
+.central-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: -20%;
+    left: 37%;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+  }
+  
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    color: #f19e1f;
+    margin-right: -5px;
+}
+.rat-info {
+    display: inline-block;
+    margin-left: 3px;
+}
+.rating-info .rat-info {
+    color: #96a6a7;
+    font-family: 'GothamMed';
+    font-size: 12px;
+}
+.my-card-img-top {
+    border-bottom: 5px solid #1baf5d;
+    position: relative;
+    display: block;
+}
+
+.sunny {
+    border-bottom: 5px solid #f19e1f;
+}
+.purple {
+    border-bottom: 5px solid #88499c;
+}
+.forest {
+    border-bottom: 5px solid #1baf5d;
+}
+.first-row {
+    padding-top: 46px;
+}
+.second-card-row {
+    margin-top: 32px;
+}
+
+.central-circle--2 {
+    top: -32px;
+    left: 22px;
+}
+.central-circle--2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: #f3f1f2;
+    bottom: -30px;
+    left: 26px;
+}
+.my-card-body--2 {
+    text-align: left;
+    padding-left: 22px;
+    display: block;
+}
+.my-card-body--2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border: 2px solid #e2dee0;
+    border-radius: 50%;
+    background-image: url(../images/woman.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 60px;
+    left: 25px;
+}
+
+.rating-img--2 {
+    display: block;
+    padding-left: 97px;
+}
+.my-card-title--2,.my-card-text--2 {
+    padding-left: 97px;
+}
+.my-card-text--2 {
+    color: #566375;
+    font-family: 'GothamBook';
+    font-size: 14px;
+    line-height: 20px;
+}
+.my-card-text--2 a {
+    font-family: 'GothamMed';
+    text-decoration: underline;
+    color: #566375;
+    font-weight: 1.25;
+}
+.my-card-title--2 {
+    margin-top: 17px;
+    margin-bottom: 5px;
+    font-family: 'GothamBold';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.man::before {
+    background-image: url(../images/man.png);
+}
+.third-row {
+    margin-top: 30px;
+}
+.fourth-row {
+    margin-top: 30px;
+}
+.my-card-text {
+    margin-bottom: 0;
+    margin-top: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.top-img-wrapper {
+    position: relative;
+}
+.card_hover {
+    position: absolute;
+    background-color: rgba(136, 73, 156, 0.7);
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card_hover-forest {
+    background-color: rgba(27, 175, 93, 0.7);
+}
+.card_hover-sunny {
+    background-color: rgba(241, 158, 31, 0.7);
+}
+.card_hover-purple {
+    background-color: rgba(136, 73, 156, 0.7);
+}
+
+.card_hover-input {
+    padding-left: 15px;   
+    width: 137px;
+    height: 31px;
+    border: 2px solid #ffffff;
+    background-color: rgba(136, 73, 156, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    background-image: url(../images/icon/search.svg);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.card_hover-input-forest {
+    background-color: rgba(27, 175, 93, 0.9);
+}
+.card_hover-input-sunny {
+    background-color: rgba(241, 158, 31, 0.9);
+}
+.card_hover-input-purple {
+    background-color: rgba(136, 73, 156, 0.9);
+}
+.card_hover-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+    vertical-align: top;
+    
+  }
+.card_hover-rating > span {
+    display: inline-block;
+    position: relative;
+    background-image: url(../images/icon/star_icon.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+  }
+.star {
+    color: #ffffff;
+  }
+.card_hover-rating > span:hover:before,
+.card_hover-rating > span:hover ~ span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon/star-fill.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+      
+}
+.card_hover-dialog {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+}
+.my-card:hover .top-img-wrapper .card_hover {
+    display: flex;
+}
+.my-card:hover .card-price {
+    display: none;
+}
+.image-wrapper {
+    position: relative;
+}
+.long_card-hover {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 29%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.my-card:hover .image-wrapper .long_card-hover {
+    display: flex;
+}
+.long_card-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin-top: 3px;
+}
+.star2 {
+    color: #f19e1f;
+}
+.long_card-rating > span {
+    display: inline-block;
+    position: relative;
+    background-image: url(../images/icon/star_icon1.svg);
+    width: 12px;
+    height: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}    
+.long_card-rating > span:hover:before,
+.long_card-rating > span:hover ~ span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon/star-fill1.svg);
+    width: 12px;
+    height: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+.place_name {
+    text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+.long_card-hover .rat-info {
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 12px;
+    margin-top: 4px;
+}
+.citrus {
+    background-color: #f19e1f;
+}
+.load_row {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e2dee0;
+}
+.more-info {
+    margin-top: 41px;
+    background-image: url(../images/icon/arrow-right.svg);
+    background-position: right center;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    padding-right: 16px;
+}
+.more-info a {
+    font-size: 18px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #566375;
+    font-family: 'GothamMed';
+    color: #566375;
+}
+.more-info a:hover {
+    text-decoration: none;
+}
+.offer_title-row {
+    flex-direction: column;
+    align-items: center;
+}
+.offer_title {
+    color: #566375;
+    font-family: 'GothamMed';
+    font-size: 22px;
+    line-height: 48px;
+}
+.offer_subtitle {
+    color: #96a6a7;
+    font-family: 'GothamBook';
+    font-size: 16px;
+    line-height: 20px;
+}
+.real {
+    font-family: 'GothamBold';
+    font-size: 24px;
+    line-height: 30px;
+    color: #566375;
+}
+.real:hover {
+    color: #1baf5d;
+}
+.offer_container {
+    padding-top: 70px;
+    padding-bottom: 143px;
+}
+.circle_row {
+    margin-top: 71px;
+}
+.circle_item {
+    margin-right: 65px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #9dacad;
+    background-image: url(../images/icon/hause_icon.svg);
+    background-position: center center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.circle_item:last-child {
+    margin-right: 0;
+}
+.circle_item:last-child::after {
+    display: none;
+}
+.circle_item::after {
+    content: "";
+    display: block;
+    width: 53px;
+    height: 2px;
+    background-color: #e2dee0;
+    position: absolute;
+    top: 47px;
+    right: -61px;
+}
+.circle_item:hover {
+    border: 2px solid #1baf5d;
+    background-image: url(../images/icon/hause_icon2.svg);
+}
+.house-grey {
+    background-image:  url(../images/icon/hause_icon.svg);
+    background-size: 40px;
+}
+.house-grey:hover {
+    background-image: url(../images/icon/hause_icon2.svg);
+}
+.girl-grey {
+    background-image: url(../images/icon/girl_icon.svg);
+    background-size: 40px;
+}
+.girl-grey:hover {
+    background-image: url(../images/icon/girl_icon2.svg);
+}
+.hat-grey {
+    background-image: url(../images/icon/hat_icon1.svg);
+    background-size: 50px;
+}
+.hat-grey:hover {
+    background-image: url(../images/icon/hat_icon2.svg);
+    
+}
+.music-grey {
+    background-image: url(../images/icon/music_icon.svg);
+}
+.music-grey:hover {
+    background-image: url(../images/icon/music_icon2.svg);
+}
+.bus-grey {
+    background-image: url(../images/icon/bus_icon.svg);
+}
+.bus-grey:hover {
+    background-image: url(../images/icon/bus_icon2.svg);
+}
+.real {
+    margin-top: 30px;
+}
+.column_row {
+    margin-top: 40px;
+}
+.nomargin {
+    margin-left: 120px;
+}
+.column {
+    position: relative;
+}
+.column-text {
+    color: #566375;
+    font-family: 'GothamBook';
+    font-size: 14px;
+    line-height: 24px;
+}
+.column-text::before {
+    content: "";
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #1baf5d;
+    display: inline-block;
+    position: absolute;
+    left: -75px;
+    background-image: url(../images/icon/leaf_icon.svg);
+    background-size: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.flash::before {
+    background-image: url(../images/icon/flash_icon.svg);
+    background-size: 15px;
+}
+.footer {
+    background-image: url(../images/city.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    box-sizing: border-box;
+}
+.footer::before {
+    content: "";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+}
+.form_container {
+    padding-top: 61px;
+    text-align: center;
+    padding-bottom: 57px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+.footer_title {
+    text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+    color: #ffffff;
+    font-family: 'GothamBold';
+    font-size: 24px;
+}
+.footer_form-wrapper{
+    display: inline-block;
+    position: relative;
+    margin-top: 47px;
+}
+.footer_form-input {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(255, 255, 255,0.2);
+    font-family: 'GothamBook';
+    font-size: 18px;
+    border-radius: 30px;
+    padding-left: 60px;
+    color: #ffffff;
+    background-image: url(../images/icon/envelope_icon.svg);
+    background-position: 25px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 15px 276px 15px 69px;
+}
+.footer_form-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 120px;
+    height: 50px;
+    box-shadow: 0 2px 0 #c1412e;
+    background-color: #e94e38;
+    border-radius: 30px;
+    color: #ffffff;
+    border-width: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer_form-button:hover {
+    opacity: 0.7;
+}
+.footer_info {
+    padding-bottom: 64px;
+}
+.footer_info-row {
+    margin-top: 42px;
+}
+.footer_info-col {
+    padding-left: 0;
+}
+.footer_info-ul {
+    font-family: 'GothamBook';
+    font-size: 14px;
+    line-height: 24px;
+    list-style: none;
+    padding-left: 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer_info-a {
+    color: #c0bebc;
+}
+.footer_info-a:hover {
+    text-decoration: none;
+    color: #c1412e;
+}
+.footer_info-a:first-child {
+    color: #ffffff;
+    font-family: 'GothamMed';
+    font-size: 16px;
+    text-decoration: underline;
+}
+.footer_info-img {
+    margin-right: 20px;
+}
+.last .footer_info-li:last-child {
+    margin-top: 65px;
+}
+.second-li {
+    padding-top: 26px;
+}
+.footer_info-li a:hover {
+    opacity: 0.5;;
+}
+
+ @media screen and (max-width: 991px) {
+     .right-div {
+         display: none;
+
+     }
+     .left-div {
+         display: none;
+     }
+     .logo {
+        margin-right: auto;
+     }
+     .login {
+         flex-grow: 1;
+         justify-content: center;
+         width: 50%;
+    }
+     .search {
+         flex-grow: 1;
+         background-position: 20px center;
+         justify-content: center;
+         width: 50%;
+    }
+     .search-text {
+         display: inline-block;
+     }
+     .header_container {
+        max-width: none;
+     }
+     .search-select {
+         flex-wrap: wrap;
+    }
+    .country_search {
+        width: 220px;
+    }
+    .search_form {
+        max-width: 300px;
+        text-align: center;
+    }
+    .country_search {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .search-select .select2-container .select2-selection--single .select2-selection__rendered {
+        padding-left: 0;
+    }
+    .header_nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .central-circle {
+        top: -10%;
+        left: 0; 
+        width: 35px;
+        height: 35px;
+
+    }
+    .header_nav {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .central-circle--2::after {
+        display: none;
+    }
+    .nomargin {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .margin_top {
+        margin-top: 20px;
+    }
+    .col-xl-3.col-lg-3.col-md-6.col-sm-6.col-6 {
+        margin-top: 20px;
+    }
+ }
+ @media screen and (max-width: 673px) {
+     .third_block-row {
+         justify-content: center;
+         flex-direction: column;
+     }
+     .select {
+         margin-top: 20px;
+     }
+     .filter {
+        margin-top: 20px;
+     }
+     .logo {
+         text-align: center;
+         margin-right: 0;
+     }
+     .filter-icon {
+         width: 25px;
+         height: 25px;
+         margin-right: 5px;
+         background-size: 14px;
+     }
+     .nomargin {
+         margin-left: 0;
+     }
+     .circle_item::after {
+         display: none;
+     }
+     .circle_item {
+         margin-right: 0;
+     }
+     .circle_row {
+         justify-content: space-around !important;
+     }
+     .column-text::before {
+        width: 30px;
+        height: 30px;
+        background-size: 15px;
+        left: 45%;
+        top: 0;
+     }
+     .column-text {
+         margin-top: 25px;
+     }
+     .footer_form-input {
+         max-width: 300px;
+         font-size: 14px;
+         padding: 10px 10px 10px 50px;
+     }
+     .footer_form-button {
+         position: static;
+         display: inline-block;
+         text-align: center;
+         margin-top: 10px;
+     }
+     .offer_title {
+         text-align: center;
+     }
+     .footer_info-col {
+         display: flex;
+         justify-content: center;
+     }
+     .social {
+         text-align: center;
+     }
+     .my-card-title, .my-card-text, .my-card-title--2 {
+         font-size: 12px;
+     }
+     .search_form-title {
+         font-size: 20px;
+     }
+     .search-select .select2-container--default .select2-selection--single .select2-selection__rendered {
+         font-size: 14px;
+     }
+     .margin_top {
+        margin-top: 20px;
+    }
+    .col-xl-3.col-lg-3.col-md-6.col-sm-6.col-6 {
+        margin-top: 20px;
+    }
+}
