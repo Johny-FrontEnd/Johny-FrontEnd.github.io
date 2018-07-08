@@ -13,13 +13,17 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .hot-6,.hot-12 {
     width: 14.1%;
 }
 .first-row,.second-row {
     flex-wrap: nowrap;
     background-color: #000000;
+    display: flex;
 }
 .hot-2 {
     background-image: url(../images/hot-2.png);
@@ -78,6 +82,8 @@ span {
     padding-bottom: 39px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.11);
     box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
 }
 .nav-ul {
     display: flex;
