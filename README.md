@@ -1,4 +1,3 @@
-# Johny-FrontEnd.github.io
 This repo has three sites for demonstration.
 You can watch them using links:
 # Johny-FrontEnd.github.io/index.html
