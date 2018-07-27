@@ -506,7 +506,7 @@ a {
     }
 
 }
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 500px) {
     
     .menu {
         justify-content: flex-start;
@@ -557,4 +557,9 @@ a {
     .copyright {
         max-width: 150px;
     }
+}
+@media screen and (max-width: 389px) {
+.info-block {
+    margin-top: 10px;
+}
 }
