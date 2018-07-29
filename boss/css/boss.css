@@ -1138,4 +1138,7 @@ body {
     .my-card:hover .top-img-wrapper .card_hover  .card_hover-inner {
         transform: scale(0.8);
     }
+    .my-card:hover .image-wrapper .long_card-hover {
+        transform: scale(0.8);
+    }
  }
