@@ -530,7 +530,8 @@ body {
   text-decoration:none;
   display:inline-block; 
   background-color:#0FF;
-  padding:10px; border-radius:20px;
+  padding:10px;
+  border-radius:20px;
   cursor:pointer; 
   color:#fff; 
   font-size:16px;
