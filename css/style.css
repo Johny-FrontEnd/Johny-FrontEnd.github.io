@@ -540,7 +540,7 @@ body {
   top:10%; 
   left:10%;
 }
-.channels.channels ul li.channel-icon.email-icon {
+.channels.channels ul .channel-icon.email-icon {
   display:none !important;
 }
   
