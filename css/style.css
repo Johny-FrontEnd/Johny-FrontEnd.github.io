@@ -540,6 +540,9 @@ body {
   top:10%; 
   left:10%;
 }
+.channel-icon.email-icon {
+  display:none;
+}
   
 @media screen and (max-width:1439px) {
   .menu {
